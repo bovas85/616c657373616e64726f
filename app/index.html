@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tourism Ireland map</title>
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- build:css styles/vendor.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="/bower_components/lightslider/dist/css/lightslider.min.css" />
+	<link rel="stylesheet" href="/bower_components/loader.css/loader.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css styles/main.css -->
+	<link rel="stylesheet" href="styles/main.css">
+	<!-- endbuild -->
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAi6tjURAqtvN5vxXmiG83nGVOpKCXodss"></script>
+	<!-- build:js scripts/vendor/modernizr.js -->
+	<!-- <script src="/bower_components/modernizr/modernizr.js"></script> -->
+	<!-- endbuild -->
+  <!-- <script src="//assets.adobedtm.com/71dcbb11123ce6b2e1ce4d47fd79a130aad3fc95/satelliteLib-177113f60f763788009998023cd15615fe2168a2-staging.js"></script> -->
+</head>
+
+<body>
+
+	<div id="tiIrelandMap" class="ti-map-wrapper temp-container">
+
+		<div class="select">
+			Select a pin to find out more
+		</div>
+
+		<!-- loader -->
+		<div class="loader">
+			<div class="loader-inner ball-clip-rotate-multiple">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+
+		<!-- tiMap -->
+		<div id="tiMap"></div>
+
+		<!-- ti nav wrapper -->
+		<div class="ti-nav-wrapper hide-me">
+			<span class="close"></span>
+			<ul class="" id="tiNav">
+				
+			</ul>
+		</div>
+	</div>
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	 <script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'XX-XXXXXXX-XX', 'auto');
+		ga('send', 'pageview');
+	</script>
+
+	<!-- build:js scripts/vendor.js -->
+
+	<!-- bower:js -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/lightslider/dist/js/lightslider.min.js"></script>
+	<script src="/bower_components/markerclustererplus/src/markerclusterer.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/mapStyles.js"></script>
+	<script src="scripts/zoomControl.js"></script>
+	<script src="scripts/marker.js"></script>
+	<script src="scripts/routesv2.js"></script>
+	<script src="scripts/tiMap.js"></script>
+	<script src="scripts/tiNav.js"></script>
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
+  <!-- <script type="text/javascript">_satellite.pageBottom();</script> -->
+</body>
+
+</html>
